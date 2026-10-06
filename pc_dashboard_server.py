@@ -147,6 +147,9 @@ def collect_data():
 
     data["board"]["vrm_temp_c"] = get_sensor_value(SENSORS.get("vrm_temp"))
     data["board"]["pch_temp_c"] = get_sensor_value(SENSORS.get("pch_temp"))
+    gpu_hot = get_sensor_value(SENSORS.get("gpu_temp"))
+    if gpu_hot is not None:
+        data["gpu"]["temp_c"] = gpu_hot
 
     data["case_fans"] = [
         {"label": fan.get("display_label", fan.get("label", "Case Fan")), "percent": get_fan_percent(fan)}
