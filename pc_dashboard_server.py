@@ -19,8 +19,8 @@ from flask import Flask, jsonify, Response, send_file
 app = Flask(__name__)
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-GLANCES_URL = "http://localhost:61208/api/4"
-LHM_URL = "http://localhost:8085/data.json"
+GLANCES_URL = "http://127.0.0.1:61208/api/4"
+LHM_URL = "http://127.0.0.1:8085/data.json"
 SENSOR_CONFIG_PATH = os.path.join(BASE_DIR, "sensor_config.json")
 
 
