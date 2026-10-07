@@ -296,8 +296,8 @@
   // Будь-яка інша назва — нейтральний дефолтний колір фена.
   function caseFanColorClass(label) {
     var l = (label || "").toLowerCase();
-    if (l.indexOf("intake") !== -1 || l.indexOf("inlet") !== -1) { return "fill-case-intake"; }
-    if (l.indexOf("exhaust") !== -1) {
+    if (l.indexOf("intake") !== -1 || l.indexOf("inl") !== -1) { return "fill-case-intake"; }
+    if (l.indexOf("exh") !== -1) {
       if (l.indexOf("lower") !== -1) { return "fill-case-exhaust-lower"; }
       return "fill-case-exhaust-upper"; // upper або exhaust без уточнення
     }
