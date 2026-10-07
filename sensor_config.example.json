@@ -1,0 +1,25 @@
+{
+  "cpu_fan": {
+    "chip": "Nuvoton NCT6687D", "group": "Fans", "label": "CPU Fan",
+    "min_rpm": 400, "max_rpm": 1445
+  },
+  "case_fans": [
+    {
+      "chip": "Nuvoton NCT6687D", "group": "Fans", "label": "System Fan #1",
+      "min_rpm": 340, "max_rpm": 1024, "display_label": "INL Lower"
+    },
+    {
+      "chip": "Nuvoton NCT6687D", "group": "Fans", "label": "System Fan #2",
+      "min_rpm": 340, "max_rpm": 1035, "display_label": "EXH Upper"
+    },
+    {
+      "chip": "Nuvoton NCT6687D", "group": "Fans", "label": "System Fan #5",
+      "min_rpm": 340, "max_rpm": 1012, "display_label": "EXH Lower"
+    }
+  ],
+  "cpu_temp": {"chip": "Intel Core i5-14400F", "group": "Temperatures", "label": "CPU Package"},
+  "vrm_temp": {"chip": "Nuvoton NCT6687D", "group": "Temperatures", "label": "VRM MOS"},
+  "pch_temp": {"chip": "Nuvoton NCT6687D", "group": "Temperatures", "label": "PCH"},
+  "gpu_temp": {"chip": "NVIDIA GeForce GTX 1060 6GB", "group": "Temperatures", "label": "GPU Hot Spot"},
+  "network_interface": "Ethernet 3"
+}
